@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [1.4.2] - 2025-12-16
 ### Added
-- compatibility with Showpare 6.6+
+- compatibility with Shopware 6.6+
 
 ## [1.4.1] - 2023-04-11
 ### Added
