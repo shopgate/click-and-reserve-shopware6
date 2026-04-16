@@ -50,7 +50,7 @@
                     emailAddress: '{{ context.customer.email }}',
                   },
                   product: {
-                    code: '{% if productCodeMapping == 'ean' and page.product.ean is defined %}{{ page.product.ean }}{% else %}{{ page.product.productNumber }}{% endif %}',
+                    code: '{% if productCodeMapping == 'ean' and page.product.ean is defined %}{{ page.product.ean }}{% elseif productCodeMapping == 'product-id' and page.product.id is defined %}{{ page.product.id }}{% else %}{{ page.product.productNumber }}{% endif %}',
                     name: '{{ page.product.translated.name }}',
                     quantity: {{ page.product.calculatedPrice.quantity }},
                     imageUrl: '{{ page.product.cover.media.url }}',

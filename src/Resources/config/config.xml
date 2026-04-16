@@ -29,6 +29,11 @@
                     <name>Product Number</name>
                     <name lang="de-DE">Produktnummer</name>
                 </option>
+                <option>
+                    <id>product-id</id>
+                    <name>Internal Shopware Product ID</name>
+                    <name lang="de-DE">Interne Shopware-Produkt-ID</name>
+                </option>
             </options>
         </input-field>
 
