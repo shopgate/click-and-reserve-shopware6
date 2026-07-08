@@ -7,7 +7,7 @@
 
     {% set sgCarBlacklist = config('SgateClickAndReserveSW6.config.productBlacklist')|default('')|replace({"\r\n": ",", "\n": ",", "\r": ",", " ": ""})|split(',')|filter(v => v is not empty) %}
     {% set sgCarBlocked = page.product.id in sgCarBlacklist or (page.product.parentId is defined and page.product.parentId and page.product.parentId in sgCarBlacklist) %}
-    {% if shopware.config.SgateClickAndReserveSW6.config.displayType != 'disabled' and not sgCarBlocked %}
+    {% if config('SgateClickAndReserveSW6.config.displayType') != 'disabled' and not sgCarBlocked %}
     <script async type='text/javascript' src='https://cdn.omni.shopgate.com/omni/storefront-library-v4.js'></script>
     <script type="text/javascript">
         try {
