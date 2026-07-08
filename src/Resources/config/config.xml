@@ -186,6 +186,14 @@
             </options>
         </input-field>
 
+        <input-field type="textarea">
+            <name>productBlacklist</name>
+            <label>Product blacklist (internal Shopware product IDs)</label>
+            <label lang="de-DE">Produkt-Blacklist (interne Shopware-Produkt-IDs)</label>
+            <helpText>One internal Shopware product ID per line (or comma-separated). The reservation button / availability box will not be rendered for these products. If a parent product's ID is listed, the button is hidden on all of its variants.</helpText>
+            <helpText lang="de-DE">Eine interne Shopware-Produkt-ID pro Zeile (oder kommagetrennt). Für diese Produkte wird der Reservierungs-Button bzw. die Verfügbarkeitsanzeige nicht dargestellt. Steht die ID eines Eltern-Produkts in der Liste, wird der Button auf allen Varianten ausgeblendet.</helpText>
+        </input-field>
+
         <input-field type="single-select">
             <name>renderLiveInventoryMode</name>
             <label lang="de-DE">Filialauswahl</label>
