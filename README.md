@@ -16,6 +16,11 @@ You will find your key in our admin in Settings -> General -> Storefront API Key
 All other settings are optional. 
 More details can be found in the [Shopgate Storefront Library Documentation](https://github.com/retail-red/storefront-library) 
 
+### Product blacklist
+If you want to hide the reservation button (or availability box) on specific product detail pages, add the affected products to the **Product blacklist** setting.
+Enter one internal Shopware product ID per line (comma-separated values are also accepted). For these products neither the button, its styles, nor the storefront library are loaded.
+If you enter the ID of a parent product, the button is hidden on all of its variants as well.
+
 ### Custom Translations
 In case you want to set custom translations for certain strings, you can use this template:
 ```

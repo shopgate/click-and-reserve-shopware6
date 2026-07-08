@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.4.5] - 2026-07-08
+### Added
+- product blacklist configuration: hide the reservation button / availability box for specific products by internal Shopware product ID (listing a parent product's ID also hides it on all of its variants)
+
 ## [1.4.4] - 2026-04-16
 ### Added
 - configuration setting that allows choosing the internal product ID from Shopware 6 as product code
@@ -52,7 +56,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/retail-red/shopware-6/compare/v1.4.4...HEAD
+[Unreleased]: https://github.com/retail-red/shopware-6/compare/v1.4.5...HEAD
+[1.4.5]: https://github.com/retail-red/shopware-6/compare/v1.4.4...v1.4.5
 [1.4.4]: https://github.com/retail-red/shopware-6/compare/v1.4.3...v1.4.4
 [1.4.3]: https://github.com/retail-red/shopware-6/compare/v1.4.2...v1.4.3
 [1.4.2]: https://github.com/retail-red/shopware-6/compare/v1.4.1...v1.4.2
