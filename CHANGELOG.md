@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- reservation button / availability box did not load on product pages whose variant option (e.g. "dunkelblau") is not among the product's properties of the same group (e.g. "blau")
+
 ## [1.4.5] - 2026-07-08
 ### Added
 - product blacklist configuration: hide the reservation button / availability box for specific products by internal Shopware product ID (listing a parent product's ID also hides it on all of its variants)

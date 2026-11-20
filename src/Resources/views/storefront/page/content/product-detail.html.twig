@@ -71,6 +71,11 @@
                       const variantDetails = sortedProperty.options.find(function(sortedPropertyOption) {
                         return variant.option === sortedPropertyOption.name
                       });
+                      // The variant's option is not among the product's properties of this group
+                      // (e.g. option "dunkelblau", property "blau"), so there is no ID to send.
+                      if (!variantDetails) {
+                        return getBasicVariantData(variant);
+                      }
 
                       return {
                         code: sortedProperty.id,
